@@ -521,6 +521,53 @@ footer .copyright {
 
 @media only screen and (min-width: 1200px) {
   /* DESKTOP STYLES */
+
+  .content-wrapper {
+    max-width: 960px;
+  }
+
+  /* HERO */
+  .hero-area h1 {
+    width: 60%;
+}
+
+  /* ASIDE */
+  aside .content-wrapper {
+    justify-content: space-around;
+  }
+
+  aside .content-wrapper .form-description,
+  aside .content-wrapper .form {
+    width: 30%;
+  }
+
+  /* FEATURES */
+
+  .features h2 {
+    width: 90%;
+  }
+
+  .features article {
+    flex-basis: 33%;
+  }
+
+  /* REVIEWS */
+  .reviews article div {
+    width: 42%;
+  }
+
+/*---------- DESKTOP STYLES - ABOUT ----------*/
+
+  .mission h2,
+  .contact-section .content-wrapper h2 {
+      width: 95%;
+  }
+
+/*---------- DESKTOP STYLES - FAQ ----------*/
+
+  .faq h2 {
+    width: 100%;
+  }
 }
 
 @media print,
