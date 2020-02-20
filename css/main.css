@@ -105,6 +105,7 @@ textarea {
    body {
      font-family: 'Open Sans', sans-serif;
      font-size: 1em;
+     color: #e2e3ed;
      text-align: left;
    }
 
@@ -120,12 +121,14 @@ textarea {
 
    h2 {
      font-family: 'Poppins', sans-serif;
+     font-weight: 500;
      font-size: 1.875em;
    }
 
    h3,
    h4 {
      font-family: 'Poppins', sans-serif;
+     font-weight: 500;
      margin: 20px 0;
      font-size: 1.125em;
    }
@@ -152,11 +155,11 @@ textarea {
      margin: 50px 0;
    }
 
-
 /*---------- BASE HEADER - FOOTER STYLES ----------*/
 
 header,
 footer, {
+  background-color: #202322;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -178,6 +181,7 @@ header .content-wrapper {
 }
 
 .header-divider {
+  background: #3a3a3a;
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
@@ -189,82 +193,18 @@ header nav {
   align-items: center;
   flex-flow: row wrap;
   width: 60%;
+  font-size: 1.125em;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 header nav ul {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
 }
 
-
-/*---------- MOBILE STYLES - HOMEPAGE ----------*/
-
-/* HERO AREA */
-
-.hero-area {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-/* ASIDE */
-
-aside {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-/* FEATURES */
-
-.features {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.features h2 {
-  margin-bottom: 60px;
-}
-
-.features article {
-  width: 63%;
-  margin: 30px 0;
-}
-
-.features .features-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.features p {
-  margin: 0;
-}
-
-/* REVIEWS */
-
-.reviews {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-}
-
-.reviews h2 {
-  margin-bottom: 40px;
-}
-
-.reviews h3 {
-  width: 55%;
-  margin: 20px 0;
-}
-
-/* FOOTER */
+/* FOOTER Styles*/
 
 footer {
   flex-direction: column;
@@ -298,9 +238,106 @@ footer .social-icons p {
 footer .copyright {
   margin: 20px 0;
 }
+
+
+/*---------- MOBILE STYLES - HOMEPAGE ----------*/
+
+/* HERO AREA */
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.hero-area h1 {
+  font-size: 2.25em;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* ASIDE */
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type=text] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type=button] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: 'Poppins', Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* FEATURES */
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.features h2 {
+  margin-bottom: 60px;
+}
+
+.features article {
+  width: 63%;
+  margin: 30px 0;
+}
+
+.features p {
+  text-align: center;
+  margin: 0;
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+/* REVIEWS */
+
+.reviews {
+  background-color: #2a423a;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.reviews h2 {
+  margin-bottom: 40px;
+  line-height: 1;
+}
+
+.reviews h3 {
+  width: 55%;
+  margin: 20px 0;
+}
+
 /*---------- MOBILE STYLES - ABOUT ----------*/
 
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -308,6 +345,7 @@ footer .copyright {
 }
 
 .contact-section {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -321,6 +359,7 @@ footer .copyright {
 /*---------- MOBILE STYLES - FAQ ----------*/
 
 .faq {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -337,18 +376,16 @@ footer .copyright {
 
 .faq h2 {
   margin-bottom: 40px;
+  line-height: 1;
 }
 
 .faq-content {
   margin-bottom: 50px;
 }
 
-
-
-
-
-
-
+.faq-content h4 {
+  line-height: 1.333;
+}
 
 
 /* ==========================================================================
@@ -448,6 +485,16 @@ footer .copyright {
     max-width: 640px;
     margin: 100px 0;
   }
+
+  h2 {
+    font-size: 2.25em;
+    line-height: 1.333;
+  }
+
+  h3 {
+    font-size: 1.5em;
+    line-height: 1.25;
+  }
   /* HEADER */
 
   header {
@@ -458,6 +505,10 @@ footer .copyright {
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
+  }
+
+  header figure {
+    width: 30%;
   }
 
   header nav {
@@ -474,7 +525,11 @@ footer .copyright {
   }
 
   /* HERO AREA */
-
+  .hero-area h1 {
+    font-size: 3em;
+    line-height: 1;
+    margin: 0;
+  }
   /* ASIDE */
   aside .content-wrapper {
     margin: 50px 0;
@@ -490,6 +545,10 @@ footer .copyright {
   }
 
   /* FEATURES */
+
+  .features h2 {
+    margin-bottom: 20px;
+  }
 
   .features article {
     display: flex;
@@ -513,6 +572,15 @@ footer .copyright {
       width: 49%;
   }
 
+  .reviews h2 {
+    width: 85%;
+  }
+
+  .reviews h3 {
+    width: 75%;
+    margin: 0;
+  }
+
   /* Footer */
   footer .content-wrapper {
       width: 65%;
@@ -523,6 +591,7 @@ footer .copyright {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: row;
   }
 
   footer .contact {
@@ -531,6 +600,15 @@ footer .copyright {
 
   footer .copyright {
       width: 100%;
+  }
+
+  footer h4 {
+    font-size: 1.5em;
+    margin-bottom: 40px;
+  }
+
+  footer p {
+    line-height: 1.285;
   }
 
 /*---------- TABLET STYLES - ABOUT ----------*/
@@ -555,6 +633,11 @@ footer .copyright {
     justify-content: space-between;
     align-items: flex-start;
  }
+
+ .contact-content h4 {
+   font-size: 1.5em;
+ }
+
 /*---------- TABLET STYLES - FAQ ----------*/
   .faq .content-wrapper {
     justify-content: space-between;
@@ -567,17 +650,42 @@ footer .copyright {
   .faq h2 {
     width: 100%;
  }
+
+ .faq h4,
+ .faq p {
+     font-size: .875em;
+     line-height: 1.125;
+ }
 }
 
 @media only screen and (min-width: 1200px) {
   /* DESKTOP STYLES */
 
+  header {
+    padding: 15px 0;
+  }
+
   .content-wrapper {
     max-width: 960px;
   }
 
+  h2 {
+    font-size: 2.25em;
+  }
+
+  h3,
+  h4 {
+      font-size: 1.875em;
+  }
+
+  p {
+      font-size: 1.125em;
+      line-height: 1.333;
+  }
+
   /* HERO */
   .hero-area h1 {
+    font-size: 3.75em;
     width: 60%;
 }
 
@@ -591,6 +699,10 @@ footer .copyright {
     width: 30%;
   }
 
+  .form-description p {
+    font-size: 1.125em;
+  }
+
   /* FEATURES */
 
   .features h2 {
@@ -602,9 +714,19 @@ footer .copyright {
   }
 
   /* REVIEWS */
+  .reviews h2 {
+    padding-bottom: 50px;
+  }
+
   .reviews article div {
     width: 42%;
   }
+
+  /* FOOTER */
+  footer h4 {
+    font-size: 1.875em;
+  }
+
 
 /*---------- DESKTOP STYLES - ABOUT ----------*/
 
