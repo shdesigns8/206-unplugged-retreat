@@ -112,6 +112,8 @@ textarea {
    ul,
    ol {
      list-style-type: none;
+     margin: 0;
+     padding: 0;
    }
 
    a {
@@ -123,6 +125,7 @@ textarea {
      font-family: 'Poppins', sans-serif;
      font-weight: 500;
      font-size: 1.875em;
+     margin: 0;
    }
 
    h3,
@@ -131,6 +134,7 @@ textarea {
      font-weight: 500;
      margin: 20px 0;
      font-size: 1.125em;
+     margin: 20px 0;
    }
 
    p {
@@ -181,11 +185,11 @@ header .content-wrapper {
 }
 
 header figure {
-    width: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
 }
 
 
@@ -210,7 +214,6 @@ header nav {
 header nav ul {
   display: flex;
   justify-content: space-around;
-  align-items: center;
   width: 100%;
 }
 
@@ -245,15 +248,13 @@ footer .social-icons {
 }
 
 footer .social-icons p {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   width: 40px;
   height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 footer .social-icons p i {
@@ -270,6 +271,7 @@ footer .copyright {
 /* HERO AREA */
 
 .hero-area {
+  min-height: 500px;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -625,6 +627,10 @@ input[type=button] {
     width: 62%;
   }
 
+  .features i {
+    margin-bottom: 30px;
+  }
+
   /* REVIEWS */
   .reviews article {
     display: flex;
@@ -660,6 +666,11 @@ input[type=button] {
 
   footer .contact {
     margin-bottom: 0;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
   }
 
   footer .copyright {
@@ -764,7 +775,7 @@ input[type=button] {
 
   aside .content-wrapper .form-description,
   aside .content-wrapper .form {
-    width: 40%;
+    width: 30%;
   }
 
   .form-description p {
